@@ -64,10 +64,10 @@ ac = powerclass.ACLineStatus
 
 
 while(True):
-    if pwr < 20 and ac!=1:
+    if pwr < 20 and ac!=1:#SPECIFY THE LOWER THRESHOLD
         balloon_tip("Plug the Charger!",str(powerclass.BatteryLifePercent)+"%")
         time.sleep(100) #Do not set this below 100! , it may result in high CPU usage
-    elif pwr > 80 and ac==1:
+    elif pwr > 80 and ac==1:#SPECIFY THE UPPER THRESHOLD
         balloon_tip("Remove the Charger!",str(powerclass.BatteryLifePercent)+"%")
         time.sleep(100) #Do not set this below 100! , it may result in high CPU usage
     del sys.modules['batterywin']
