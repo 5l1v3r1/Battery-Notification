@@ -1,5 +1,6 @@
 # Battery-Notification
-Alerts if battery level drops below 20% or is above 80% with AC input on.
+
+A Python Script -- Alerts if battery level drops below 20% or is above 80% with AC input on/off(specified).
 
 Make sure to Install the 'pywin32-219.win32-py2.7.exe' setup , it installs the 'win32api' module of python.
 
