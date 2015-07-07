@@ -1,6 +1,6 @@
 # Battery-Notification
 
-A Python Script -- Alerts if battery level drops below 20% or is above 80% with AC input on/off(specified).
+A Python Script -- Alerts if battery level drops below 20%(changeable) or is above 80%(changeable) with AC input on/off(specified).
 
 
 SETUP ->
