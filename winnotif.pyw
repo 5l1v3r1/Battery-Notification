@@ -43,7 +43,7 @@ class WindowsBalloonTip:
                           hicon, "Balloon  tooltip",title,200,msg))
 
         #Destroy & self.show_balloon(title, msg)
-        time.sleep(5)
+        time.sleep(5)#TIME PERIOD FOR BALLOON NOTIFICATION IN seconds.
         DestroyWindow(self.hwnd)
         classAtom = UnregisterClass(classAtom, hinst)
     def OnDestroy(self, hwnd, msg, wparam, lparam):
