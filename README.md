@@ -1,5 +1,7 @@
 # Battery-Notification
 
+"This project is licensed under the terms of the MIT license."
+
 A Python Script -- Alerts if battery level drops below 20%(changeable) or is above 80%(changeable) with AC input on/off(specified).
 
 
