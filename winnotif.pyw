@@ -1,5 +1,5 @@
 # -- coding: utf-8 --
-__author__ = 'Xplore'
+__author__ = 'Saumyakanta Sahoo'
  
 from win32api import *
 from win32gui import *
