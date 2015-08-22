@@ -1,5 +1,6 @@
 # -- coding: utf-8 --
 __author__ = 'Saumyakanta Sahoo'
+'''This project is licensed under the terms of the MIT license.'''
  
 from win32api import *
 from win32gui import *
@@ -19,7 +20,7 @@ class WindowsBalloonTip:
         wc = WNDCLASS()
         hinst = wc.hInstance = GetModuleHandle(None)
         wc.lpszClassName = "PythonTaskbar"
-        wc.lpfnWndProc = message_map # could also specify a wndproc.
+        wc.lpfnWndProc = message_map 
         classAtom = RegisterClass(wc)
 
         # Create the Window.
@@ -49,7 +50,7 @@ class WindowsBalloonTip:
     def OnDestroy(self, hwnd, msg, wparam, lparam):
         nid = (self.hwnd, 0)
         Shell_NotifyIcon(NIM_DELETE, nid)
-        PostQuitMessage(0) # Terminate the app.
+        PostQuitMessage(0) # Terminate it.
 def balloon_tip(title, msg):
     w=WindowsBalloonTip(msg, title)
 
